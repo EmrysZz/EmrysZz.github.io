@@ -5,159 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amirul — Digital Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-light: #f6f8fa;
-      --text-light: #2c3e50;
-      --bg-dark: #1f2937;
-      --text-dark: #f9fafb;
-      --accent: #3b82f6;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    body.dark {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
-
-    header {
-      text-align: center;
-      padding: 2em 1em;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 1em;
-    }
-
-    section {
-      background: white;
-      padding: 1.5em;
-      margin-bottom: 2em;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background 0.3s ease;
-    }
-
-    body.dark section {
-      background: #2d3748;
-    }
-
-    h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "• ";
-      color: var(--accent);
-    }
-
-    .toggle-dark {
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 0.6em 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      position: fixed;
-      top: 1em;
-      right: 1em;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button>
-
-  <header>
-    <h1>Amirul aiman</h1>
-    <p>Aspiring Net-Centric Computing Specialist | CCNA & IoT Certified | Chemical Engineering Graduate</p>
-    <div class="contact">
-      📍 Jasin, Malacca • ✉️ <a href="amirulaiman902@gmail.com">Email Me</a> • 🌐 <a href="#">emrys.me</a>
-    </div>
-  </header>
-
   <div class="container">
+    <header>
+      <h1>Muhammad Amirul Aiman Bin Ibrahim</h1>
+      <div class="contact">
+        <a href="mailto:amirulaiman902@gmail.com">amirulaiman902@gmail.com</a>
+        <span> | </span>
+        <span>+6013-621-9288</span>
+        <a href="https://github.com/EmrysZz" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/amirul" target="_blank">LinkedIn</a>
+      </div>
+    </header>
     <section>
-      <h2>Summary</h2>
-      <p>Student with a diploma in Chemical Engineering and now pursuing Computer Science focused on net-centric computing. Cisco-certified in CCNA and IoT. Passionate about blending engineering insights with smart technologies and modern systems.</p>
+      <div class="section-title">Objective</div>
+      <p>My objective is to locate a company that could profit from my educational background and passion for engineering while I gain practical experience for completing my internship programme for my diploma in chemical engineering at UiTM Pasir Gudang.</p>
     </section>
-
+    <div class="divider"></div>
     <section>
-      <h2>Education</h2>
+      <div class="section-title">Skills</div>
       <ul>
-        <li><strong>Bachelor’s in Computer Science (Net-Centric Computing)</strong> – Institution Name, Expected Graduation: [Year]</li>
-        <li><strong>Diploma in Chemical Engineering</strong> – Institution Name, Completed: [Year]</li>
+        <li>Microsoft Office: Expert</li>
+        <li>AutoCAD: Intermediate</li>
+        <li>Software Editor: Proficient</li>
+        <li>Aspen Plus: Intermediate</li>
+        <li>English Language: Proficient</li>
+        <li>Phone repair certificate</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue.js</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Principles</li>
       </ul>
     </section>
-
+    <div class="divider"></div>
     <section>
-      <h2>Certifications</h2>
+      <div class="section-title">Work Experience</div>
       <ul>
-        <li><strong>CCNA (Cisco Certified Network Associate)</strong> – Issued: [Month, Year]</li>
-        <li><strong>Cisco Certified IoT Fundamentals</strong> – Issued: [Month, Year]</li>
+        <li>
+          <strong>Part-Timer Electrical Helper</strong><br>
+          <em>Senang Autogate Engineering</em> | July 2020 – September 2020
+          <ul>
+            <li>Assisted electricians</li>
+            <li>Moved supplies and tools</li>
+            <li>Cut and bent wire and conduit</li>
+            <li>Maintained and repaired wiring</li>
+            <li>Cleaned up workspaces and tools</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Part-Timer Electrical Servicer</strong><br>
+          <em>Senang Autogate Engineering</em> | August 2022 – September 2022
+          <ul>
+            <li>Installed auto gates and gate barriers</li>
+            <li>Installed CCTV systems</li>
+            <li>Inspected electrical wiring</li>
+            <li>Checked equipment and solved technical issues</li>
+          </ul>
+        </li>
+        <li>Frontend Developer at XYZ Corp (2023–2025)</li>
+        <li>Web Designer at ABC Studio (2021–2023)</li>
       </ul>
     </section>
-
+    <div class="divider"></div>
     <section>
-      <h2>Technical Skills</h2>
+      <div class="section-title">Education</div>
       <ul>
-        <li>Networking & IoT: Routing, Switching, Sensors, Edge Computing</li>
-        <li>Programming: Python, JavaScript</li>
-        <li>Tools: Git, GitHub Pages, HTML/CSS, Responsive Design</li>
-        <li>Other: System Troubleshooting, Documentation</li>
+        <li>
+          <strong>SPM (2019)</strong><br>
+          Sekolah Menengah Ibn Khaldun<br>
+          Stream: Pure Science<br>
+          Results:
+          <ul>
+            <li>1A+ (Mathematics)</li>
+            <li>2B (Physics and Additional Mathematics)</li>
+            <li>2C (Chemistry and Biology)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Diploma in Chemical Engineering (Ongoing)</strong><br>
+          Universiti Teknologi MARA (UiTM) Pasir Gudang<br>
+          Duration: 2020 – Present<br>
+          Current CGPA: 3.1 / 4.0
+        </li>
       </ul>
     </section>
-
+    <div class="divider"></div>
     <section>
-      <h2>Projects & Showcase</h2>
+      <div class="section-title">Volunteer Experience / Leadership</div>
       <ul>
-        <li>Digital Resume Website – Hosted via GitHub Pages</li>
-        <li>Responsive Portfolio UI – Built for mobile-first access</li>
+        <li>
+          <strong>Youth Identity and Volunteerism Course (National Level)</strong><br>
+          Participated and completed all course modules<br>
+          Location: Asia Camp, Kuala Kubu Bharu, Selangor
+        </li>
+        <li>
+          <strong>Head Librarian (2019, School Level)</strong><br>
+          Appointed by teacher<br>
+          Managed day-to-day operations of the school library at Sekolah Menengah Ibn Khaldun.
+        </li>
       </ul>
     </section>
-
+    <div class="divider"></div>
     <section>
-      <h2>Languages</h2>
+      <div class="section-title">Certifications</div>
       <ul>
-        <li>English (Professional)</li>
-        <li>Malay (Native)</li>
+        <li>
+          <strong>CCNA: Introduction to Networks</strong> (Cisco NetAcad)<br>
+          <span>Gained foundational knowledge in networking concepts, protocols, and devices. Learned to configure, troubleshoot, and secure network infrastructures.</span>
+        </li>
+        <li>
+          <strong>IoT Fundamentals</strong> (Cisco NetAcad)<br>
+          <span>Explored Internet of Things (IoT) concepts, architecture, and applications. Developed skills in connecting devices, collecting data, and understanding IoT security and analytics.</span>
+        </li>
+        <li>
+          <strong>Phone repair certificate</strong><br>
+          <span>Certified in basic phone repair and troubleshooting.</span>
+        </li>
       </ul>
     </section>
+    <a class="btn" href="#" download>Download Resume</a>
   </div>
-
-  <script>
-    // Optional: Save dark mode setting
-    const body = document.body;
-    const toggle = document.querySelector('.toggle-dark');
-    toggle.addEventListener('click', () => {
-      body.classList.toggle('dark');
-    });
-  </script>
 </body>
 </html>

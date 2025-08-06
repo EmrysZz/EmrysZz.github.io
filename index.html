@@ -141,11 +141,13 @@
           <span>Completed under Program Peneraju Skil (PLUS). Certificate of Achievement presented by Alias Mohd Nadzri (Executive Director). Covered intensive training in Programmable Logic Controllers (PLCs).</span>
         </li>
         <li>
-          <strong>CCNA: Introduction to Networks</strong> (Cisco NetAcad)<br>
+          <strong>CCNA: Introduction to Networks</strong> (Cisco NetAcad)
+          <a href="CCNA_Certificate.pdf" target="_blank" style="margin-left:8px; font-weight:normal; font-size:1em;">View Certificate</a><br>
           <span>Gained foundational knowledge in networking concepts, protocols, and devices. Learned to configure, troubleshoot, and secure network infrastructures.</span>
         </li>
         <li>
-          <strong>IoT Fundamentals</strong> (Cisco NetAcad)<br>
+          <strong>Introduction to IoT and Digital Transformation</strong> (Cisco NetAcad)
+          <a href="IoT_Certificate.pdf" target="_blank" style="margin-left:8px; font-weight:normal; font-size:1em;">View Certificate</a><br>
           <span>Explored Internet of Things (IoT) concepts, architecture, and applications. Developed skills in connecting devices, collecting data, and understanding IoT security and analytics.</span>
         </li>
         <li>
@@ -154,25 +156,6 @@
         </li>
       </ul>
     </section>
-    <a class="btn" id="downloadPdfBtn" href="#">Download Resume</a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script>
-      document.getElementById('downloadPdfBtn').addEventListener('click', function(e) {
-        e.preventDefault();
-        import('https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js').then(() => {
-          html2canvas(document.querySelector('.container')).then(canvas => {
-            const imgData = canvas.toDataURL('image/png');
-            const pdf = new window.jspdf.jsPDF({orientation: 'portrait', unit: 'pt', format: 'a4'});
-            const pageWidth = pdf.internal.pageSize.getWidth();
-            //const pageHeight = pdf.internal.pageSize.getHeight();
-            const imgWidth = pageWidth - 40;
-            const imgHeight = canvas.height * imgWidth / canvas.width;
-            pdf.addImage(imgData, 'PNG', 20, 20, imgWidth, imgHeight);
-            pdf.save('resume.pdf');
-          });
-        });
-      });
-    </script>
   </div>
 </body>
 </html>

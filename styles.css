@@ -1,112 +1,106 @@
-/* styles.css - Main stylesheet for Amirul's Digital Resume */
-:root {
-  --bg-light: #f6f8fa;
-  --text-light: #2c3e50;
-  --bg-dark: #1f2937;
-  --text-dark: #f9fafb;
-  --accent: #3b82f6;
-  --card-bg: #fff;
-  --card-bg-dark: #23272f;
-  --shadow: 0 4px 24px rgba(60, 72, 88, 0.12);
-  --radius: 16px;
-}
-
 body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-light);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-body.dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
+  padding: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: 2em auto;
-  background: var(--card-bg);
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  padding: 2em;
-  transition: background 0.3s ease;
-}
-body.dark .container {
-  background: var(--card-bg-dark);
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 40px;
 }
 
 header {
   text-align: center;
-  padding: 2em 1em 1em 1em;
-  border-bottom: 2px solid var(--accent);
-  margin-bottom: 1.5em;
+  margin-bottom: 32px;
 }
 
 h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: var(--accent);
-  letter-spacing: 1px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2a4d69;
 }
 
 .contact {
-  margin-top: 1em;
-  font-size: 1.1em;
-}
-.contact a {
-  color: var(--accent);
-  text-decoration: none;
-  margin: 0 0.5em;
-  transition: color 0.2s;
-}
-.contact a:hover {
-  color: #2563eb;
-  text-decoration: underline;
+  font-size: 1rem;
+  color: #4f5d75;
+  margin-bottom: 8px;
 }
 
-section {
-  margin-bottom: 2em;
+.contact a {
+  color: #1b98e0;
+  text-decoration: none;
+  margin: 0 8px;
 }
+
 .section-title {
-  font-size: 1.3em;
-  color: var(--accent);
-  margin-bottom: 0.5em;
-  border-left: 4px solid var(--accent);
-  padding-left: 0.5em;
+  font-size: 1.3rem;
   font-weight: 600;
-}
-.divider {
-  height: 2px;
-  background: var(--bg-light);
-  margin: 2em 0;
-  border-radius: 2px;
-}
-body.dark .divider {
-  background: var(--bg-dark);
+  color: #1b98e0;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 
 ul {
-  padding-left: 1.2em;
+  list-style: none;
+  padding-left: 0;
 }
+
+ul ul {
+  list-style: disc inside;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+strong {
+  color: #2a4d69;
+}
+
+.divider {
+  border-bottom: 1px solid #e0e4ea;
+  margin: 28px 0;
 }
 
 .btn {
   display: inline-block;
-  background: var(--accent);
+  background: #1b98e0;
   color: #fff;
-  padding: 0.5em 1.2em;
+  font-weight: 600;
+  padding: 12px 32px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
-  margin-top: 1em;
+  margin-top: 24px;
   transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
 }
+
 .btn:hover {
-  background: #2563eb;
+  background: #176ca7;
+}
+
+span {
+  color: #4f5d75;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.1rem;
+  }
 }
 
